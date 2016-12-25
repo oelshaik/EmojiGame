@@ -40,8 +40,10 @@ public class InputManagerScript : MonoBehaviour {
             if(objectHit)
             { 
                 //Debug.Log(offset);
-                emojiObj.transform.position = new Vector3(mousePoint.x, mousePoint.y, pos_offset) + offset;
-                Debug.Log(emojiObj.transform.position);
+                emojiObj.transform.position = new Vector3(mousePoint.x, mousePoint.y, pos_offset) + new Vector3(offset.x,offset.y,500f);
+                //Debug.Log("Mouse point: " + new Vector3(mousePoint.x, mousePoint.y, pos_offset));
+                //Debug.Log("Offset " + offset);
+                Debug.Log("Result" + emojiObj.transform.position);
             }
         }
         if(Input.GetMouseButtonUp(0))
