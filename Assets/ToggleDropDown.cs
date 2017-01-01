@@ -25,30 +25,30 @@ public class ToggleDropDown : MonoBehaviour {
         
 	}
 
-    //public void toggleGrid()
-    //{
-    //    if(gridActive)
-    //    {
-    //        grid.SetActive(false);
-    //    }
-    //    else
-    //    {
-    //        grid.SetActive(true);
-    //    }
-    //    gridActive = !gridActive;
-    //}
-
     public void toggleGrid()
     {
-        if(gridDown)
+        if(gridActive)
         {
-            pullUp();
+            grid.SetActive(false);
         }
         else
         {
-            dropDown();
+            grid.SetActive(true);
         }
+        gridActive = !gridActive;
     }
+
+//    public void toggleGrid()
+//    {
+//        if(gridDown)
+//        {
+//            pullUp();
+//        }
+//        else
+//        {
+//            dropDown();
+//        }
+//    }
 
     private void dropDown()
     {
